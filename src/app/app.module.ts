@@ -7,11 +7,12 @@ import { LibroListaComponent } from './libro-lista/libro-lista.component';
 
 import { LibroService } from './libro.service';
 import { LoggerService } from './logger.service';
+import { LibroObservableService } from './libro-observable.service';
 
 @NgModule({
   declarations: [AppComponent, LibroListaComponent],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [LibroService, LoggerService],
+  providers: [LibroService, LoggerService, LibroObservableService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
